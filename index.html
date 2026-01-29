@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎰 Slot Machine Game 🎰</h1>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Balance:</span>
+                <span id="balance" class="stat-value">100</span> coins
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Total Spins:</span>
+                <span id="spins" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Total Invested:</span>
+                <span id="invested" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Total Won:</span>
+                <span id="won" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Net Gain/Loss:</span>
+                <span id="net" class="stat-value">0</span>
+            </div>
+        </div>
+
+        <div class="slot-machine">
+            <div class="slots">
+                <div class="slot" id="slot1">🍒</div>
+                <div class="slot" id="slot2">🍋</div>
+                <div class="slot" id="slot3">🍊</div>
+            </div>
+        </div>
+
+        <div class="message" id="message">Press SPIN to start!</div>
+
+        <button id="spinButton" class="spin-button">SPIN (1 coin)</button>
+
+        <div class="info">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Each spin costs 1 coin</li>
+                <li>Match 3 symbols to win!</li>
+                <li>🪙 Three coins = 100 coins (Jackpot!)</li>
+                <li>🍒 Three cherries = 10 coins</li>
+                <li>🍋 Three lemons = 5 coins</li>
+                <li>🍇 Three grapes = 3 coins</li>
+                <li>🍊 Three oranges = 2.41 coins</li>
+                <li>The game is balanced to average 0 gain/loss over time</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
